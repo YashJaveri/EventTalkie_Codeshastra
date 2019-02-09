@@ -1,22 +1,42 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- * @lint-ignore-every XPLATJSCOPYRIGHT1
- */
-
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator,createAppContainer} from 'react-navigation';
-import Welcome from './src/Components/Welcome'
-
+import Welcome from './src/Screens/Welcome'
+import  Chat from './src/Screens/Chat'
+import Home from './src/Screens/Home'
 const AppNavigator = createStackNavigator({
   Welcome:Welcome,
+  Home:Home,
+  Chat:Chat
 },{
   initialRouteName:'Welcome'
-});
+},
+{
+  navigationOptions:{
+    headerStyle: {
+      backgroundColor: Constants.SECONDARY,
+      borderBottomWidth: 0,
+      borderRadius: 0.5,
+      elevation: 0,
+    },
+    headerBackTitle: null,
+    headerTintColor: Constants.PRIMARY,
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
+  }
+}
+);
 
 
-export default createAppContainer(AppNavigator);
+export default class App extends React.Component {
+
+  static navigationOptions = ({ navigation }) => {
+    header: false;
+  };
+
+  render() {
+    return <AppNavigator />;
+  }
+}
+
