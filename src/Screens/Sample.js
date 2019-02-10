@@ -28,7 +28,7 @@ export default class Sample extends React.Component{
     render(){
         return(
             <View style={styles.mainStyle}>                
-            </View>>
+            </View>
         );
     }
 }
