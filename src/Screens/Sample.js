@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image,StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     mainStyle: {
         flex: 1,
         justifyContent: 'center',
-        
+        alignItems: 'center'
     }
 });
 

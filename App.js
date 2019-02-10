@@ -14,7 +14,7 @@ const AppNavigator = createStackNavigator({
   Home:Home,
   Chat:Chat
 },{
-  initialRouteName:'SplashScreen'
+  initialRouteName:'Chat'
 },
 {
   navigationOptions:{
