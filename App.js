@@ -5,15 +5,32 @@ import Welcome from "./src/Screens/Welcome";
 import Chat from "./src/Screens/Chat";
 import Home from "./src/Screens/Home";
 import Constants from "./src/Constants";
+import SplashScreen from "./src/Screens/SplashScreen";
 
 const AppNavigator = createStackNavigator(
   {
+    SplashScreen: SplashScreen,
     Welcome: Welcome,
     Home: Home,
     Chat: Chat
   },
   {
-    initialRouteName: "Home"
+    initialRouteName: "SplashScreen"
+  },
+  {
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: Constants.SECONDARY,
+        borderBottomWidth: 0,
+        borderRadius: 0.5,
+        elevation: 0
+      },
+      headerBackTitle: null,
+      headerTintColor: Constants.PRIMARY,
+      headerTitleStyle: {
+        fontWeight: "bold"
+      }
+    }
   }
 );
 

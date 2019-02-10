@@ -54,7 +54,7 @@ export default class Home extends React.Component {
             alignItems: "center"
           }}
         >
-          <View style={{ height: Dimensions.get("screen").height / 2.5 }} />
+          <View style={{ height: Dimensions.get("window").height / 2.5 }} />
           <Text
             style={{
               fontSize: 25,
@@ -75,7 +75,7 @@ export default class Home extends React.Component {
           style={{
             elevation: 1,
             borderRadius: 5,
-            width: Dimensions.get("screen").width / 1.1
+            width: Dimensions.get("window").width / 1.1
           }}
         >
           <TextInput
@@ -105,7 +105,7 @@ export default class Home extends React.Component {
         <TouchableOpacity
           activeOpacity={0.8}
           style={{
-            width: Dimensions.get("screen").width / 1.05,
+            width: Dimensions.get("window").width / 1.05,
             borderRadius: 10,
             height: 50,
             backgroundColor: Constants.SECONDARY,

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -40,6 +39,10 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
+		045E674D512447A5BE6F28BA /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28669A5BF3CD4083B410D506 /* Lobster-Regular.ttf */; };
+		86C7056336EA43B1A329EAE1 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D31576CF01F74E0A9A701D24 /* OpenSans-Light.ttf */; };
+		D8E6D622D895442B822BD678 /* lobster.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18B390B8CB5B402E94270A10 /* lobster.ttf */; };
+		589F4120A9E34DCFB1D9EB15 /* opensans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0E60F3C10B643B0A7457D85 /* opensans.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,6 +350,10 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		28669A5BF3CD4083B410D506 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; name = "Lobster-Regular.ttf"; path = "../src/Assets/Fonts/Lobster-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D31576CF01F74E0A9A701D24 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; name = "OpenSans-Light.ttf"; path = "../src/Assets/Fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		18B390B8CB5B402E94270A10 /* lobster.ttf */ = {isa = PBXFileReference; name = "lobster.ttf"; path = "../src/Assets/Fonts/lobster.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D0E60F3C10B643B0A7457D85 /* opensans.ttf */ = {isa = PBXFileReference; name = "opensans.ttf"; path = "../src/Assets/Fonts/opensans.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -585,6 +592,7 @@
 				00E356EF1AD99517003FC87E /* HoneypotTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				DD9004199092466E899E5FE1 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -610,6 +618,18 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		DD9004199092466E899E5FE1 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				28669A5BF3CD4083B410D506 /* Lobster-Regular.ttf */,
+				D31576CF01F74E0A9A701D24 /* OpenSans-Light.ttf */,
+				18B390B8CB5B402E94270A10 /* lobster.ttf */,
+				D0E60F3C10B643B0A7457D85 /* opensans.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -692,7 +712,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -1057,6 +1077,10 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				045E674D512447A5BE6F28BA /* Lobster-Regular.ttf in Resources */,
+				86C7056336EA43B1A329EAE1 /* OpenSans-Light.ttf in Resources */,
+				D8E6D622D895442B822BD678 /* lobster.ttf in Resources */,
+				589F4120A9E34DCFB1D9EB15 /* opensans.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
