@@ -90,7 +90,8 @@ export default class Sample extends React.Component{
             <View style={{flex:1}}></View> 
             <Animatable.Text 
                 style={styles.welcome}
-                animation='bounce'>
+                animation='bounce'
+                duration={5000}>
                     WELCOME
                 </Animatable.Text>
 
