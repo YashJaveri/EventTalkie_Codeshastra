@@ -5,14 +5,16 @@ import Welcome from './src/Screens/Welcome';
 import  Chat from './src/Screens/Chat';
 import Home from './src/Screens/Home';
 import Constants from './src/Constants';
+import SplashScreen from './src/Screens/SplashScreen';
 
 
 const AppNavigator = createStackNavigator({
+  SplashScreen:SplashScreen,
   Welcome:Welcome,
   Home:Home,
   Chat:Chat
 },{
-  initialRouteName:'Welcome'
+  initialRouteName:'SplashScreen'
 },
 {
   navigationOptions:{
